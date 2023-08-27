@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => (
   <div>
-    <h2>Welcome to the Bookstore by Luis Emilio</h2>
+    <h2>Welcome to the Bookstore by José Luis Berbesi</h2>
     {}
   </div>
 );

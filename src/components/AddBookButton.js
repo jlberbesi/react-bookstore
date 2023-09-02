@@ -6,14 +6,13 @@ import { addBook } from '../redux/books/booksSlice';
 const AddBookButton = ({ title, author }) => {
   const dispatch = useDispatch();
 
+  const handleClick = () => {
+    const newBook = { title, author, id: Date.now() };
+    dispatch(addBook(newBook));
+  };
+
   return (
-    <button
-      type="button"
-      onClick={() => {
-        const newBook = { title, author, id: Date.now() };
-        dispatch(addBook(newBook));
-      }}
-    >
+    <button type="button" onClick={handleClick}>
       Add Book
     </button>
   );
